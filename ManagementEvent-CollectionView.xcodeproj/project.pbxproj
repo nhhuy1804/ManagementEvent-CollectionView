@@ -14,6 +14,12 @@
 		F649FF971EBA24ED00E79DEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F649FF951EBA24ED00E79DEB /* LaunchScreen.storyboard */; };
 		F649FFA21EBA24ED00E79DEB /* ManagementEvent_CollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F649FFA11EBA24ED00E79DEB /* ManagementEvent_CollectionViewTests.swift */; };
 		F649FFAD1EBA24ED00E79DEB /* ManagementEvent_CollectionViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F649FFAC1EBA24ED00E79DEB /* ManagementEvent_CollectionViewUITests.swift */; };
+		F649FFBB1EBA25E700E79DEB /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F649FFBA1EBA25E700E79DEB /* Event.swift */; };
+		F649FFBD1EBA275700E79DEB /* EventLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F649FFBC1EBA275700E79DEB /* EventLine.swift */; };
+		F649FFC11EBA302100E79DEB /* HeaderSectionCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F649FFC01EBA302100E79DEB /* HeaderSectionCollectionReusableView.swift */; };
+		F649FFC31EBA304400E79DEB /* EventCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F649FFC21EBA304400E79DEB /* EventCollectionViewCell.swift */; };
+		F649FFC51EBA31E000E79DEB /* ManagementEventCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F649FFC41EBA31E000E79DEB /* ManagementEventCollectionViewController.swift */; };
+		F649FFC71EBA320800E79DEB /* EventDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F649FFC61EBA320800E79DEB /* EventDetailTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		F649FFA81EBA24ED00E79DEB /* ManagementEvent-CollectionViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ManagementEvent-CollectionViewUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F649FFAC1EBA24ED00E79DEB /* ManagementEvent_CollectionViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagementEvent_CollectionViewUITests.swift; sourceTree = "<group>"; };
 		F649FFAE1EBA24ED00E79DEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F649FFBA1EBA25E700E79DEB /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		F649FFBC1EBA275700E79DEB /* EventLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventLine.swift; sourceTree = "<group>"; };
+		F649FFC01EBA302100E79DEB /* HeaderSectionCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderSectionCollectionReusableView.swift; sourceTree = "<group>"; };
+		F649FFC21EBA304400E79DEB /* EventCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCollectionViewCell.swift; sourceTree = "<group>"; };
+		F649FFC41EBA31E000E79DEB /* ManagementEventCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagementEventCollectionViewController.swift; sourceTree = "<group>"; };
+		F649FFC61EBA320800E79DEB /* EventDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +115,12 @@
 				F649FF931EBA24ED00E79DEB /* Assets.xcassets */,
 				F649FF951EBA24ED00E79DEB /* LaunchScreen.storyboard */,
 				F649FF981EBA24ED00E79DEB /* Info.plist */,
+				F649FFBA1EBA25E700E79DEB /* Event.swift */,
+				F649FFBC1EBA275700E79DEB /* EventLine.swift */,
+				F649FFC01EBA302100E79DEB /* HeaderSectionCollectionReusableView.swift */,
+				F649FFC21EBA304400E79DEB /* EventCollectionViewCell.swift */,
+				F649FFC41EBA31E000E79DEB /* ManagementEventCollectionViewController.swift */,
+				F649FFC61EBA320800E79DEB /* EventDetailTableViewController.swift */,
 			);
 			path = "ManagementEvent-CollectionView";
 			sourceTree = "<group>";
@@ -259,7 +277,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F649FFC11EBA302100E79DEB /* HeaderSectionCollectionReusableView.swift in Sources */,
+				F649FFC31EBA304400E79DEB /* EventCollectionViewCell.swift in Sources */,
+				F649FFBD1EBA275700E79DEB /* EventLine.swift in Sources */,
+				F649FFC71EBA320800E79DEB /* EventDetailTableViewController.swift in Sources */,
+				F649FFC51EBA31E000E79DEB /* ManagementEventCollectionViewController.swift in Sources */,
 				F649FF8F1EBA24ED00E79DEB /* ViewController.swift in Sources */,
+				F649FFBB1EBA25E700E79DEB /* Event.swift in Sources */,
 				F649FF8D1EBA24ED00E79DEB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,6 +531,7 @@
 				F649FFB31EBA24ED00E79DEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F649FFB41EBA24ED00E79DEB /* Build configuration list for PBXNativeTarget "ManagementEvent-CollectionViewTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +540,7 @@
 				F649FFB61EBA24ED00E79DEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F649FFB71EBA24ED00E79DEB /* Build configuration list for PBXNativeTarget "ManagementEvent-CollectionViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +549,7 @@
 				F649FFB91EBA24ED00E79DEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
