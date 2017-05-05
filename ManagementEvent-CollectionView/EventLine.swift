@@ -27,18 +27,6 @@ class EventLine
         return [self.sun(), self.mon(), self.tue(), self.wed(), self.thu(), self.fri(), self.sat()]
     }
     
-    //  Chủ nhật
-    private class func sun() -> EventLine {
-        var events = [Event]()
-        
-        events.append(Event(title: "Tiêu đề 1", description: "Mô tả 1", eventImage: #imageLiteral(resourceName: "one")))
-        events.append(Event(title: "Tiêu đề 2", description: "Mô tả 2", eventImage: #imageLiteral(resourceName: "two") ))
-        events.append(Event(title: "Tiêu đề 3", description: "Mô tả 3", eventImage: #imageLiteral(resourceName: "three")))
-        events.append(Event(title: "Tiêu đề 4", description: "Mô tả 4", eventImage: #imageLiteral(resourceName: "four")))
-        events.append(Event(title: "Tiêu đề 5", description: "Mô tả 5", eventImage: #imageLiteral(resourceName: "five")))
-        
-        return EventLine(dateOfWeek: "Chủ Nhật", includeEvents: events, dateImage: #imageLiteral(resourceName: "sunday"))
-    }
     
     //  Thứ 2
     private class func mon() -> EventLine {
@@ -116,6 +104,19 @@ class EventLine
         events.append(Event(title: "Tiêu đề 5", description: "Mô tả 5", eventImage: #imageLiteral(resourceName: "five")))
         
         return EventLine(dateOfWeek: "Thứ 7", includeEvents: events, dateImage: #imageLiteral(resourceName: "saturday"))
+    }
+    
+    //  Chủ nhật
+    private class func sun() -> EventLine {
+        var events = [Event]()
+        
+        events.append(Event(title: "Tiêu đề 1", description: "Mô tả 1", eventImage: #imageLiteral(resourceName: "one")))
+        events.append(Event(title: "Tiêu đề 2", description: "Mô tả 2", eventImage: #imageLiteral(resourceName: "two") ))
+        events.append(Event(title: "Tiêu đề 3", description: "Mô tả 3", eventImage: #imageLiteral(resourceName: "three")))
+        events.append(Event(title: "Tiêu đề 4", description: "Mô tả 4", eventImage: #imageLiteral(resourceName: "four")))
+        events.append(Event(title: "Tiêu đề 5", description: "Mô tả 5", eventImage: #imageLiteral(resourceName: "five")))
+        
+        return EventLine(dateOfWeek: "Chủ Nhật", includeEvents: events, dateImage: #imageLiteral(resourceName: "sunday"))
     }
 }
 
